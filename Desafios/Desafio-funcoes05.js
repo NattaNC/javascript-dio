@@ -10,23 +10,23 @@
     - Acima de duas vezes, preço normal da etiqueta mais juros de 10%;
 */
 
-function AplicarDesconto(valor, desconto) {
-    return (valor - (valor * (desconto / 100)))
-}
+    function AplicarDesconto(valor, desconto) {
+        return (valor - (valor * (desconto / 100)))
+    }
 
-function AplicarJuros(valor, desconto) {
-    return (valor + (valor * (desconto / 100)))
-}
+    function AplicarJuros(valor, desconto) {
+        return (valor + (valor * (desconto / 100)))
+    }
 
-const precoEtiqueta = 100
-const FormaDePagamento = 1
+    const precoEtiqueta = 100
+    const FormaDePagamento = 1
 
-if (FormaDePagamento === 1) {
-    console.log(AplicarDesconto(precoEtiqueta, 10))
-} else if (FormaDePagamento === 2) {
-    console.log(AplicarDesconto(precoEtiqueta, 15))
-} else if (FormaDePagamento === 3) {
-    console.log(precoEtiqueta)
-} else {
-    console.log(AplicarJuros(precoEtiqueta, 10))
-}
+    if (FormaDePagamento === 1) {
+        console.log(AplicarDesconto(precoEtiqueta, 10))
+    } else if (FormaDePagamento === 2) {
+        console.log(AplicarDesconto(precoEtiqueta, 15))
+    } else if (FormaDePagamento === 3) {
+        console.log(precoEtiqueta)
+    } else {
+        console.log(AplicarJuros(precoEtiqueta, 10))
+    }
