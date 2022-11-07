@@ -1,16 +1,18 @@
 const { gets, print } = require('./teste')
 
-let a = parseInt(gets());
-let N = parseInt(gets());
 
-const soma = a + N * 8
+let a = 1
+let N = 100
 
+let soma = 0
 
-print(soma)
+for (let i = a; i <= N; i++) {
+    if (i % a === 0) {
+        soma = soma + i
+    }
+}
 
-
-
-
+console.log(soma)
 
 
 
