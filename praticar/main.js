@@ -1,18 +1,15 @@
 const { gets, print } = require('./teste')
 
+let arr = {'1,2,3,4,5,6'}
+let arrVazio = [arr];
 
-let a = 1
-let N = 100
+function ordenarNumeros(array) {
 
-let soma = 0
+    const even = array.filter(num => num % 2 === 0);
+    const odd = array.filter(num => num % 2 === 1);
+  
+    return even.concat(odd);
+  }
 
-for (let i = a; i <= N; i++) {
-    if (i % a === 0) {
-        soma = soma + i
-    }
-}
-
-console.log(soma)
-
-
+print(ordenarNumeros(arrVazio))
 
